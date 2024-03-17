@@ -18,7 +18,7 @@ The intended workflow is to: -
 3. Run `Terraform init`
 4. Run `Terraform console`
 5. Play around with logic until you find a solution
-6. Add your solution to `main.tf` as `local.solution`
+6. Add your solution to `main.tf` within the same locals block as outlined
 
 ### Hints
 

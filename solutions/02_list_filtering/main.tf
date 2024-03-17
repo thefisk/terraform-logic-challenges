@@ -23,5 +23,17 @@ locals {
         "USA",
         "European Union"
     ]
-    #g20_lower = ???
+    g7 = [
+        "Canada",
+        "France",
+        "Germany",
+        "Italy",
+        "Japan",
+        "UK",
+        "USA"
+    ]
+    g13 = [
+        for country in local.g20 :
+        country if !contains(local.g7, country)
+    ]
 }

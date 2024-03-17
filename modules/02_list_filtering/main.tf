@@ -23,5 +23,14 @@ locals {
         "USA",
         "European Union"
     ]
-    #g20_lower = ???
+    g7 = [
+        "Canada",
+        "France",
+        "Germany",
+        "Italy",
+        "Japan",
+        "UK",
+        "USA"
+    ]
+    #g13 = ???
 }
