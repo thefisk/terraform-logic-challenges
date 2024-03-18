@@ -2,7 +2,7 @@
 
 ### Scenario
 
-We are presented with a list of G20 members as well as G7 members. We need to produce a third list consisting of the "G13"; G20 members which are not members of the G7.
+We are presented with a list of G20 members and a list of G7 members. We need to produce a third list consisting of the "G13"; G20 members which are not members of the G7.
 
 ### Goal
 
