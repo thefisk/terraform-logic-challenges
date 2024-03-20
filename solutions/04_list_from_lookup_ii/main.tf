@@ -47,5 +47,7 @@ locals {
   }
   minimum = 1000
   maximum = 3000
-  #gdp_in_range = ???
+  gdp_in_range = [ for k, v in local.gdp :
+    k if v > local.minimum && v < local.maximum
+    ]
 }

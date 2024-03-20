@@ -2,8 +2,10 @@
 
 ### Scenario
 
-To go along with our list of G20 nations we are given a map containing GDP data from December 2022 (Billion USD). We would like to find out which countries have a GDP over a given threshold.
+Ah! The requirements have changed at the 11th hour. This never happens. Right? ¯\_(ツ)_/¯
+
+Well, now we have been provided with an upper limit so we need to find countries whose GDP is more than 1 trillion, but less than 3 trillion.
 
 ### Goal
 
-Create a new local value, `local.gdp_over_threshold`, which will result in a list of all nations whose GDP exceeds the value of `local.threshold`; 1 trillion USD (1000 billion).
+Create a new local value, `local.gdp_in range`, which will result in a list of all nations whose GDP exceeds the value of `local.mimimum`, but is also under the value provided oin `local.maximum`.

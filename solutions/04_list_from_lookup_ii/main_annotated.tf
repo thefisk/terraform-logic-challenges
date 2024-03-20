@@ -47,5 +47,11 @@ locals {
   }
   minimum = 1000
   maximum = 3000
-  #gdp_in_range = ???
+  # When viewing other people's code you may see "k, v" notation
+  # This represents Key and Value and is used for convenience
+  # The labels we apply to each component of a map (k/v, country/gdp) are a choice
+  gdp_in_range = [ for k, v in local.gdp :
+    # Using && syntax allows us to chain multiple conditions
+    k if v > local.minimum && v < local.maximum
+    ]
 }
