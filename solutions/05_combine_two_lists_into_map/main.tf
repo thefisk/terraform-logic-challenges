@@ -1,0 +1,59 @@
+terraform {}
+
+locals {
+  country = [
+    "Nigeria",
+    "Canada",
+    "Brazil",
+    "France",
+    "Germany",
+    "Japan",
+    "South Korea",
+    "Australia",
+    "United States",
+    "United Kingdom",
+    "India",
+    "China",
+    "South Africa",
+    "Mexico",
+    "Italy",
+    "Spain",
+    "Netherlands",
+    "Sweden",
+    "Norway",
+    "Kenya",
+    "Egypt",
+    "Turkey",
+    "Argentina",
+    "Indonesia",
+    "Saudi Arabia"
+  ]
+  capitals = [
+    "Abuja",
+    "Ottawa",
+    "Brasília",
+    "Paris",
+    "Berlin",
+    "Tokyo",
+    "Seoul",
+    "Canberra",
+    "Washington, D.C.",
+    "London",
+    "New Delhi",
+    "Beijing",
+    "Pretoria",
+    "Mexico City",
+    "Rome",
+    "Madrid",
+    "Amsterdam",
+    "Stockholm",
+    "Oslo",
+    "Nairobi",
+    "Cairo",
+    "Ankara",
+    "Buenos Aires",
+    "Jakarta",
+    "Riyadh"
+  ]
+  country_capitals = zipmap(local.country, local.capitals)
+}
